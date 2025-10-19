@@ -28,12 +28,12 @@ Developed for **HACKX 2025**, Synapse introduces a **Digital Skill Passport** â€
 
 ### How to Run
 
-**1. Backend Setup (`backend/`)**
-
 Make sure you have **Node.js** and **MongoDB** installed.  
 You can also create a `.env` file in the `backend/` directory to configure your settings as shown below:
 
 Then follow the steps below:
+
+**1. Backend Setup (`backend/`)**
 
 ```powershell
 # Navigate to the backend folder
@@ -50,7 +50,7 @@ npm start
 
 ```powershell
 # Open a new terminal and navigate to the frontend folder
-cd ../frontend
+cd frontend
 
 # Install dependencies
 npm install
