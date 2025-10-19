@@ -1,59 +1,60 @@
-# Digital Skill Passport - Team Synapse
+# Synapse - Digital Skill Passport
 
-> AI-powered digital skill verification platform for blue-collar workers  
-> **HackX 2025 Submission** - *Winner* [if you win!]
+**An AI-powered digital identity and skill verification platform for blue-collar workers.**
 
-![Digital Skill Passport](docs/images/banner.png)
+Developed for **HACKX 2025**, Synapse introduces a **Digital Skill Passport** — a verified, permanent, and portable profile using **AI and QR technology** to authenticate worker skills, work history, and feedback. It ensures trust, transparency, and mobility in the unorganised workforce sector.
 
-## Problem Statement
+---
 
-Blue-collar workers face significant challenges in skill verification:
-- Fake certificates and inflated resumes
-- No standardized verification system  
-- Difficulty tracking migrant workers' records
-- Industries can't easily verify claimed skills
+### Features
 
-## Our Solution
+* **Verified Skill Profiles:** Permanent, tamper-proof digital identities.  
+* **AI-Based Verification:** Custom AI models verify work experience and detect fake documents.  
+* **QR Code Access:** Unique QR code for instant verification.  
+* **Multilingual & Voice Support:** Accessible to semi-literate users.  
+* **Offline Mode:** Profiles viewable without internet.
 
-**Digital Skill Passport** - A permanent, verified digital portfolio with unique QR code that instantly shows employers verified skills, work history, and feedback.
+---
 
-### Key Features
-- **QR Code Digital Identity** - Instant skill verification
-- **AI-Powered Verification** - Human-in-the-loop system
-- **Mobile-First Design** - Voice & text support for semi-literate users
-- **Offline Capability** - Works in low-connectivity areas
+### Tech Stack
 
-## Technology Stack
+* **Frontend:** React.js  
+* **Backend:** Node.js, Express.js  
+* **Database:** MongoDB  
+* **Cloud:** AWS S3  
+* **AI/ML:** Custom models, Google Translate API  
 
-### Frontend
-- **React.js** - User interface
-- **QRCode.react** - QR code generation
-- **Axios** - API communication
-- **Tailwind CSS** - Styling (optional)
+---
 
-### Backend  
-- **Node.js + Express** - Server framework
-- **MongoDB** - Database
-- **JWT** - Authentication
-- **Multer** - File uploads
-- **bcryptjs** - Password hashing
+### How to Run
 
-### Deployment
-- **Frontend**: Vercel/Netlify
-- **Backend**: Heroku/Railway
-- **Database**: MongoDB Atlas
-- **Storage**: AWS S3/Cloudinary
+**1. Backend Setup (`backend/`)**
 
-## Quick Start
+Make sure you have **Node.js** and **MongoDB** installed.  
+You can also create a `.env` file in the `backend/` directory to configure your settings as shown below:
 
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB (local or Atlas)
-- Git
+Then follow the steps below:
 
-### Installation
+```powershell
+# Navigate to the backend folder
+cd backend
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/your-username/digital-skill-passport
-cd digital-skill-passport
+# Install dependencies
+npm install
+
+# Run the server
+npm start
+```
+
+**2. Frontend Setup (`frontend/`)**
+
+```powershell
+# Open a new terminal and navigate to the frontend folder
+cd ../frontend
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
