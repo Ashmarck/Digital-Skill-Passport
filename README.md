@@ -1,60 +1,112 @@
-# Synapse - Digital Skill Passport
+# Digital Skill Passport - A HACKX 2025 Project by Team Synapse
 
-**An AI-powered digital identity and skill verification platform for blue-collar workers.**
-
-Developed for **HACKX 2025**, Synapse introduces a **Digital Skill Passport** — a verified, permanent, and portable profile using **AI and QR technology** to authenticate worker skills, work history, and feedback. It ensures trust, transparency, and mobility in the unorganised workforce sector.
-
----
-
-### Features
-
-* **Verified Skill Profiles:** Permanent, tamper-proof digital identities.  
-* **AI-Based Verification:** Custom AI models verify work experience and detect fake documents.  
-* **QR Code Access:** Unique QR code for instant verification.  
-* **Multilingual & Voice Support:** Accessible to semi-literate users.  
-* **Offline Mode:** Profiles viewable without internet.
+**Industry:** Digital Banking Services   
+**Theme:** Skill Verification & Digital Identity 
 
 ---
 
-### Tech Stack
+## Project Overview
 
-* **Frontend:** React.js  
-* **Backend:** Node.js, Express.js  
-* **Database:** MongoDB  
-* **Cloud:** AWS S3  
-* **AI/ML:** Custom models, Google Translate API  
+Synapse introduces the **Digital Skill Passport**, an AI-powered platform designed to provide blue-collar workers with a permanent, verified digital portfolio. This solution aims to formalize skill identity, reduce hiring friction, and empower a vital segment of the workforce.
 
----
+Each worker gets a unique QR code that grants employers instant access to their verified skills, work history, and peer feedback, building a trusted ecosystem for hiring.
 
-### How to Run
+## The Problem
 
-Make sure you have **Node.js** and **MongoDB** installed.  
-You can also create a `.env` file in the `backend/` directory to configure your settings as shown below:
+The current system for verifying skills in the unorganized labor sector is broken. Key challenges include:
+* **Difficult Verification:** Industries struggle to easily verify the skills that workers claim to have.
+* **Prevalence of Fraud:** The use of fake certificates and exaggerated resumes is a common issue.
+* **Poor Record Keeping:** It's difficult to track worker records as they frequently move between jobs and locations.
+* **Lack of a Standard:** There is no single, trusted system for managing and verifying worker skills.
 
-Then follow the steps below:
+## Our Solution: The AI-Powered Skill Passport
 
-**1. Backend Setup (`backend/`)**
+Our platform provides a single source of truth for a worker's capabilities.
 
-```powershell
-# Navigate to the backend folder
-cd backend
 
-# Install dependencies
-npm install
+The worker's journey is simple and accessible:
+1.  **Create Profile:** A worker signs up and uploads evidence of their work.
+2.  **AI Verification:** Our system verifies their past work and experience.
+3.  **Connect:** Employers can scan a worker's QR code or search the platform to view their verified portfolio.
+4.  **Hire & Feedback:** After hiring, employers can leave feedback, which further enriches the worker's profile.
 
-# Run the server
-npm start
-```
+## Key Features
 
-**2. Frontend Setup (`frontend/`)**
+* **Verified Digital Portfolio:** A permanent, portable digital identity for every worker.
+* **AI-Powered Verification:** Custom AI models to validate work experience and evidence.
+* **QR Code Access:** Instant access to a worker's profile for quick and reliable verification by employers.
+* **Accessibility:** A mobile-first design with multilingual support and voice/text inputs to assist semi-literate users.
+* **Offline Mode:** Allows for profile viewing and data submission even with limited internet connectivity.
 
-```powershell
-# Open a new terminal and navigate to the frontend folder
-cd frontend
+## Tech Stack
 
-# Install dependencies
-npm install
+* **Frontend:** React.js 
+* **Backend:** Node.js, Express.js 
+* **Database:** MongoDB 
 
-# Run the development server
-npm run dev
-```
+## Getting Started: How to Use This Repo
+
+Follow these instructions to get a local copy of the project up and running.
+
+### Prerequisites
+
+* Node.js (v18 or later)
+* npm or yarn
+* Git
+* A running instance of MongoDB
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/](https://github.com/)[Ashmarck]/digital-skill-passport.git
+    cd digital-skill-passport
+    ```
+
+2.  **Project Structure:** We recommend a `client` and `server` folder structure.
+    ```
+    /digital-skill-passport
+    |-- /client         # React frontend
+    |-- /server         # Node.js backend
+    |-- .gitignore
+    |-- LICENSE
+    |-- README.md
+    ```
+
+3.  **Install Server Dependencies:**
+    ```bash
+    cd server
+    npm install
+    ```
+
+4.  **Install Client Dependencies:**
+    ```bash
+    cd ../client
+    npm install
+    ```
+
+5.  **Environment Variables:** Create a `.env` file in the `/server` directory. This file will store your secret keys and database connection strings.
+    ```
+    # .env file example
+    MONGO_URI=your_mongodb_connection_string
+    PORT=5000
+    ```
+
+### Running the Application
+
+1.  **Start the Backend Server:**
+    ```bash
+    cd server
+    npm run dev  # Or "npm start"
+    ```
+
+2.  **Start the Frontend React App:**
+    ```bash
+    cd client
+    npm start
+    ```
+The application should now be running on your local machine!
+
+## License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
