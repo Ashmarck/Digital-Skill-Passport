@@ -8,7 +8,7 @@ import { Label } from '../components/ui/label';
 import { Button } from '../components/ui/button';
 import { Checkbox } from '../components/ui/checkbox';
 import { Shield, Users, Briefcase, UserCircle } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 export default function LoginPage() {
   const navigate = useNavigate();

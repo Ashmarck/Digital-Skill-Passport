@@ -12,7 +12,7 @@ import {
   AccordionTrigger,
 } from '../components/ui/accordion';
 import { MessageCircle, Mail, Phone, HelpCircle, Send } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 export default function HelpPage() {
   const [formData, setFormData] = useState({
