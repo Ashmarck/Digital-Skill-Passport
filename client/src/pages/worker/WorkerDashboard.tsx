@@ -216,14 +216,7 @@ export default function WorkerDashboard() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-gray-600">Complete your profile</span>
-                    <span className="text-gray-900">85%</span>
-                  </div>
-                  <Progress value={85} />
-                  <p className="text-xs text-gray-600">
-                    Add more skills to increase your visibility to employers
-                  </p>
+                
                   <Link to="/worker/profile">
                     <Button size="sm" variant="outline" className="w-full">
                       Complete Profile
