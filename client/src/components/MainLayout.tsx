@@ -15,7 +15,6 @@ export function MainLayout({ children, showNav = true }: MainLayoutProps) {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
-    { path: '/help', label: 'Help & Contact' },
   ];
 
   return (
@@ -116,11 +115,7 @@ export function MainLayout({ children, showNav = true }: MainLayoutProps) {
                       About Us
                     </Link>
                   </li>
-                  <li>
-                    <Link to="/help" className="hover:text-white transition-colors">
-                      Help & Contact
-                    </Link>
-                  </li>
+                  
                   <li>
                     <Link to="/terms" className="hover:text-white transition-colors">
                       Terms & Privacy

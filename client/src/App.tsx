@@ -5,7 +5,6 @@ import { Toaster } from './components/ui/sonner';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import LoginPage from './pages/LoginPage';
-import HelpPage from './pages/HelpPage';
 import TermsPage from './pages/TermsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Error500Page from './pages/Error500Page';
@@ -44,7 +43,6 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/help" element={<HelpPage />} />
         <Route path="/terms" element={<TermsPage />} />
         
         {/* Worker Routes */}

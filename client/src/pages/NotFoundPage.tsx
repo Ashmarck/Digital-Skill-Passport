@@ -32,22 +32,7 @@ export default function NotFoundPage() {
               Go Back
             </Button>
           </div>
-          <div className="mt-12 p-6 bg-white rounded-xl border-2 border-gray-200">
-            <Search className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-gray-900 mb-2">Looking for something specific?</h3>
-            <p className="text-gray-600 mb-4">Try these popular links:</p>
-            <div className="flex flex-wrap gap-2 justify-center">
-              <Link to="/about">
-                <Button variant="outline" size="sm">About Us</Button>
-              </Link>
-              <Link to="/help">
-                <Button variant="outline" size="sm">Help & Contact</Button>
-              </Link>
-              <Link to="/login">
-                <Button variant="outline" size="sm">Login</Button>
-              </Link>
-            </div>
-          </div>
+          
         </div>
       </div>
     </MainLayout>
