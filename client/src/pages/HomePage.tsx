@@ -100,7 +100,7 @@ export default function HomePage() {
                   size="lg"
                   className="bg-white text-blue-600 hover:bg-blue-50 gap-2"
                 >
-                  <Users className="h-5 w-5" />
+                  
                   Join as Worker
                   <ArrowRight className="h-5 w-5" />
                 </Button>
@@ -111,7 +111,6 @@ export default function HomePage() {
                   variant="outline"
                   className="bg-transparent border-white text-white hover:bg-white/10 gap-2"
                 >
-                  <Briefcase className="h-5 w-5" />
                   Join as Employer
                   <ArrowRight className="h-5 w-5" />
                 </Button>
@@ -243,30 +242,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <CheckCircle className="h-16 w-16 text-green-600 mx-auto mb-6" />
-          <h2 className="text-gray-900 mb-4">Ready to Get Started?</h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Join thousands of workers and employers building trust through verified skills
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/login?type=worker">
-              <Button size="lg" className="gap-2">
-                <Users className="h-5 w-5" />
-                Join as Worker
-              </Button>
-            </Link>
-            <Link to="/login?type=employer">
-              <Button size="lg" variant="outline" className="gap-2">
-                <Briefcase className="h-5 w-5" />
-                Join as Employer
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      
     </MainLayout>
   );
 }
